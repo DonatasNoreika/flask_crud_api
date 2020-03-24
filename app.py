@@ -42,13 +42,13 @@ def prideti_uzduoti():
 def gauti_visas_uzduotis():
     visos_uzduotys = Uzduotis.query.all()
     rezultatas = uzduotys_schema.dump(visos_uzduotys)
-    return jsonify(rezultatas.data)
+    return jsonify(rezultatas)
 
 # cRud
 @app.route('/uzduotis/<id>', methods=['GET'])
 def gauti_uzduoti(id):
     uzduotis = Uzduotis.query.get(id)
-    return uzduotys_schema.jsonify(uzduotis)
+    return uzduotis_schema.jsonify(uzduotis)
 
 # crUd
 @app.route('/uzduotis/<id>', methods=['PUT'])
