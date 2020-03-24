@@ -41,5 +41,5 @@ print(json.loads(r.text))
 # print(json.loads(r.text))
 
 # Ištriname užduotį
-r = requests.delete('http://127.0.0.1:8000/uzduotis/1')
-print(json.loads(r.text))
+# r = requests.delete('http://127.0.0.1:8000/uzduotis/1')
+# print(json.loads(r.text))
